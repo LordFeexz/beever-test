@@ -1,0 +1,47 @@
+#myQuote {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.myQuote-hr {
+  max-width: 30%;
+}
+
+#kanyeQuote {
+  text-align: center;
+}
+
+.kanye-img {
+  width: 300px;
+}
+
+.kanye-quote {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.quote {
+  color: #fff;
+  border: 1px solid #222;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: #222;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+  margin: 1rem;
+}
+
+.quote:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+#home {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10vh;
+}
+
+.kanye-link {
+  margin-bottom: 10vh;
+}
