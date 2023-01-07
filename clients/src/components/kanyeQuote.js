@@ -9,15 +9,15 @@ export default function KanyeQuote() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchQuote()).catch((err) => console.log(err));
+    dispatch(fetchQuote());
   }, [dispatch]);
 
   const generate = () => {
-    dispatch(fetchQuote).catch((err) => console.log(err));
+    dispatch(fetchQuote());
   };
 
   const favQuoteHandler = () => {
-    dispatch(favQuote()).catch((err) => console.log(err));
+    dispatch(favQuote());
   };
 
   return (

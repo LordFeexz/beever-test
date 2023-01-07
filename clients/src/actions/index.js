@@ -13,7 +13,7 @@ export const fetchQuote = () => async (dispatch) => {
       payload: data.quote,
     });
   } catch (err) {
-    return err;
+    console.log(err);
   }
 };
 
@@ -30,14 +30,14 @@ export const favQuote = () => async (dispatch, getState) => {
       });
     }
   } catch (err) {
-    return err;
+    console.log(err);
   }
 };
 
 export const addQuote = (payload) => async (dispatch, getState) => {
   try {
     const state = getState();
-    const { myQuote } = state.quoteReducer;
+    const { myQuote } = state;
 
     if (
       !myQuote.map((el) => el.toLowerCase()).includes(payload.toLowerCase())
@@ -50,6 +50,6 @@ export const addQuote = (payload) => async (dispatch, getState) => {
       });
     }
   } catch (err) {
-    return err;
+    console.log(err);
   }
 };

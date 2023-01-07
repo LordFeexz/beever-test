@@ -16,7 +16,7 @@ export default function MyQuote() {
 
   const submit = (e) => {
     e.preventDefault();
-    dispatch(addQuote(quote)).catch((err) => console.log(err));
+    dispatch(addQuote(quote));
     setQuote("");
   };
 
